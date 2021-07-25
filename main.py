@@ -76,7 +76,7 @@ def weather():
       far = kel_273 * 9/5 + 32
       ans = math.floor(far)
       return ans
-    answer = f'{kel_to_far(ans)}F'
+    answer = f'{kel_to_far(ans)} degree fahrenheit'
     speak(answer)
     return render_template('answer.html', answer=answer)
   return render_template('weather.html')
